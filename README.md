@@ -53,14 +53,12 @@ INSERT INTO `questoes` (`id`, `questao`, `alternativa1`, `alternativa2`, `altern
 Crie Um arquivo chamado `config.php`
 adicione as configurações do banco de dados mysql da seguinte forma:
 ```php
-// config.php
 <?php
-return [
-    'host' => 'seu host',
-    'dbname' => 'nome base de dados', // de preferecia coloque o nome como 'quiz'
-    'username' => 'seu user',
-    'password' => 'sua senha'
-];
+#DB Config
+$HOST = "localhost";
+$DBNAME = "quiz";
+$USERNAME = "root";
+$PASSWORD = "root";
 ```
 
 ### Driver para funcionamento do PDO

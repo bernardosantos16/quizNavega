@@ -24,9 +24,9 @@
     </style>
 
     <?php
-        require 'config.php';
+        include("config.php");
         // Conecção com Banco de dados
-        $dsn = "mysql:host={$config['host']};dbname={$config['dbname']};charset=utf8";
+        $dsn = "mysql:host=".$HOST.";dbname=".$DBNAME.";charset=utf8";
         $username = $USERNAME;
         $password = $PASSWORD;
         
